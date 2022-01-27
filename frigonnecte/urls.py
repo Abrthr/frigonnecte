@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from accueil import views as viewsaccueil
+from Calendrier import views as viewscalendrier
+from LogIn import views as viewslogin
+from creation_compte import views as viewscreation_compte
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',viewsaccueil.accueil,name='accueil'),
+    path('calendrier/',viewscalendrier.calendrier,name='calendrier'),
+    path('login/', viewslogin.login, name='login'),
+    path('creation_compte/',viewscreation_compte.creation,name='creation_compte'),
+    
 ]
