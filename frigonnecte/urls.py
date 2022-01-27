@@ -19,6 +19,11 @@ from accueil import views as viewsaccueil
 from Calendrier import views as viewscalendrier
 from LogIn import views as viewslogin
 from creation_compte import views as viewscreation_compte
+from frigo import views as viewsfrigo
+from page_principale import views as viewspage_principale
+from liste_courses import views as viewsliste_courses
+from Paramètres import views as viewsparametres
+from recette import views as viewsrecette
 
 
 urlpatterns = [
@@ -26,6 +31,10 @@ urlpatterns = [
     path('',viewsaccueil.accueil,name='accueil'),
     path('calendrier/',viewscalendrier.calendrier,name='calendrier'),
     path('login/', viewslogin.login, name='login'),
-    path('creation_compte/',viewscreation_compte.creation,name='creation_compte'),
-    
+    path('creation_compte/',viewscreation_compte.creation_compte,name='creation_compte'),
+    path('frigo/',viewsfrigo.frigo,name='frigo'),
+    path('monfrigo/',viewspage_principale.page_principale,name='page_principale'),
+    path('listedecourse/',viewsliste_courses.liste_courses,name='liste_courses'),
+    path('parametres/',viewsparametres.parametres,name='parametres'),
+    path('recette/',viewsrecette.recette,name='recette'),
 ]

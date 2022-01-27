@@ -4,5 +4,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def creation(request):
+def creation_compte(request):
     return HttpResponse("Page de Création de compte")
