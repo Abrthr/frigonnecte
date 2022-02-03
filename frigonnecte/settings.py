@@ -38,6 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accueil.apps.AccueilConfig',
+    'Calendrier.apps.CalendrierConfig',
+    'creation_compte.apps.CreationCompteConfig',
+    'frigo.apps.FrigoConfig',
+    'listes_courses.apps.ListeCoursesConfig',
+    'LogIn.apps.LogInConfig',
+    'page_principale.apps.ListeCoursesConfig',
+    'Paramètres.apps.ParamètresConfig',
+    'recette.apps.RecetteConfig'
 ]
 
 MIDDLEWARE = [
