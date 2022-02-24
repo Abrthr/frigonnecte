@@ -9,8 +9,8 @@ class Frigo(models.Model):
 
 class contient (models.Model):
     frigo = models.ForeignKey(Frigo,on_delete=models.CASCADE)
-    recette = models.ForeignKey(Recette,on_delete=models.PROTECT,Null=True)
-    ingredient = models.ForeignKey(Ingredient,on_delete=models.PROTECT,Null=True)
+    recette = models.ForeignKey(Recette,on_delete=models.PROTECT,null=True)
+    ingredient = models.ForeignKey(Ingredient,on_delete=models.PROTECT,null=True)
     quantite = models.FloatField()
     date_achat = models.DateField(auto_now=True)
     date_de_peremption = models.DateField()
