@@ -45,6 +45,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accueil.apps.AccueilConfig',
+    'Calendrier.apps.CalendrierConfig',
+    'creation_compte.apps.CreationCompteConfig',
+    'frigo.apps.FrigoConfig',
+    'liste_courses.apps.ListeCoursesConfig',
+    'LogIn.apps.LoginConfig',
+    'page_principale.apps.PagePrincipaleConfig',
+    'Paramètres.apps.ParamètresConfig',
+    'recette.apps.RecetteConfig'
 ]
 
 MIDDLEWARE = [
@@ -113,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Paris'
 
 USE_I18N = True
 
