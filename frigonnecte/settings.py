@@ -31,12 +31,29 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Calendrier.apps.CalendrierConfig',
+    'creation_compte.apps.CreationCompteConfig',
+    'frigo.apps.FrigoConfig',
+    'liste_courses.apps.ListeCoursesConfig',
+    'LogIn.apps.LoginConfig',
+    'page_principale.apps.PagePrincipaleConfig',
+    'Paramètres.apps.ParamètresConfig',
+    'recette.apps.RecetteConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accueil.apps.AccueilConfig',
+    'Calendrier.apps.CalendrierConfig',
+    'creation_compte.apps.CreationCompteConfig',
+    'frigo.apps.FrigoConfig',
+    'liste_courses.apps.ListeCoursesConfig',
+    'LogIn.apps.LoginConfig',
+    'page_principale.apps.PagePrincipaleConfig',
+    'Paramètres.apps.ParamètresConfig',
+    'recette.apps.RecetteConfig'
 ]
 
 MIDDLEWARE = [
@@ -76,7 +93,7 @@ WSGI_APPLICATION = 'frigonnecte.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'frigo_database',
     }
 }
 
@@ -105,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Paris'
 
 USE_I18N = True
 
