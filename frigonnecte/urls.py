@@ -34,7 +34,7 @@ urlpatterns = [
     path('creation_compte/',viewscreation_compte.creation_compte,name='creation_compte'),
     path('frigo/',viewsfrigo.frigo,name='frigo'),
     path('monfrigo/',viewspage_principale.page_principale,name='page_principale'),
-    path('listedecourse/',viewsliste_courses.liste_courses,name='liste_courses'),
+    path('liste_courses/',viewsliste_courses.liste_courses,name='liste_courses'),
     path('parametres/',viewsparametres.parametres,name='parametres'),
     path('recette/',viewsrecette.recette,name='recette'),
 ]

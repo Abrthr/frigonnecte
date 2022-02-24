@@ -41,9 +41,9 @@ INSTALLED_APPS = [
     'Calendrier.apps.CalendrierConfig',
     'creation_compte.apps.CreationCompteConfig',
     'frigo.apps.FrigoConfig',
-    'listes_courses.apps.ListeCoursesConfig',
-    'LogIn.apps.LogInConfig',
-    'page_principale.apps.ListeCoursesConfig',
+    'liste_courses.apps.ListeCoursesConfig',
+    'LogIn.apps.LoginConfig',
+    'page_principale.apps.PagePrincipaleConfig',
     'Paramètres.apps.ParamètresConfig',
     'recette.apps.RecetteConfig'
 ]
