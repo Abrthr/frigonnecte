@@ -29,9 +29,6 @@ from recette import views as viewsrecette
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', include('LogIn.urls')) ,#urls de l'application LogIn
-
-
-    path('admin/', admin.site.urls),
     path('',viewsaccueil.accueil,name='accueil'),
     path('calendrier/',viewscalendrier.calendrier,name='calendrier'),
     path('creation_compte/',viewscreation_compte.creation_compte,name='creation_compte'),

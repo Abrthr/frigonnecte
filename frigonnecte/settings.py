@@ -31,14 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'Calendrier.apps.CalendrierConfig',
-    'creation_compte.apps.CreationCompteConfig',
-    'frigo.apps.FrigoConfig',
-    'liste_courses.apps.ListeCoursesConfig',
-    'LogIn.apps.LoginConfig',
-    'page_principale.apps.PagePrincipaleConfig',
-    'Paramètres.apps.ParamètresConfig',
-    'recette.apps.RecetteConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
