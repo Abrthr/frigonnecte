@@ -32,7 +32,7 @@ urlpatterns = [
     path('',viewsaccueil.accueil,name='accueil'),
     path('calendrier/',viewscalendrier.calendrier,name='calendrier'),
     path('creation_compte/',viewscreation_compte.creation_compte,name='creation_compte'),
-    path('frigo/',viewsfrigo.frigo,name='frigo'),
+    path('frigo/',include('frigo.urls')),
     path('monfrigo/',viewspage_principale.page_principale,name='page_principale'),
     path('liste_courses/',viewsliste_courses.liste_courses,name='liste_courses'),
     path('parametres/',viewsparametres.parametres,name='parametres'),

@@ -1,0 +1,9 @@
+{% if contenu %}
+    <ul>
+    {% for nourriture in contenu %}
+        <li>nourriture.recette, nourriture.ingredient</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No food are available.</p>
+{% endif %}

@@ -11,8 +11,9 @@ class Ingredient(models.Model):
     Volume2 = "mL"
     Nombre = "NBR"
 
-    type = [(Poids,"gramme"),(Volume1,'Litre'),(Volume2, 'mL'),(Nombre, 'Nbre')]
+    type = [(Poids,"gramme"),(Volume1,'Litre'),(Volume2, 'mL'),(Nombre, 'type')]
     type_quantite = models.CharField(max_length = 3,choices = type,default = Nombre)
+    nom_ingredient = models.CharField(max_length=50,null=True)
 
 class Comporte(models.Model):
     Recette = models.ForeignKey(Recette,on_delete=models.CASCADE)
