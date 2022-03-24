@@ -5,4 +5,4 @@ from django.http import HttpResponse
 
 
 def page_principale(request):
-    return HttpResponse("Bienvenue dans ton frigo")
+    return render(request,'page_principale/page_principale.html')
