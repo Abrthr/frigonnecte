@@ -1,0 +1,19 @@
+{% if ingredient %}
+    <ul>
+    {% for nourriture in ingredient %}
+        <li>{{nourriture.ingredient}}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No ingredient are available.</p>
+{% endif %}
+{% if recette %}
+    <ul>
+    {% for nourriture in recette %}
+        <li>{{nourriture.recette}}</li>
+    {% endfor %}
+    </ul> 
+{% else %}
+    <p>No recepeit are available.</p>
+{% endif %}
+
