@@ -1,11 +1,15 @@
 from django.db import models
+from django.conf import settings
 
 from frigo.models import Frigo
 from recette.models import Recette,Ingredient
 # Create your models here.
 
 class Personne(models.Model):
-    nom = models.CharField(max_length=100)
+    nom = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete = models.CASCADE
+    )
     Omnivore = "OMni"
     Vegan = 'VeGa'
     Vegetarian = 'VeGe'
