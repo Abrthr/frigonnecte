@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth.forms import (
     AuthenticationForm, PasswordChangeForm, PasswordResetForm, SetPasswordForm,
 )
+from django.contrib.auth import REDIRECT_FIELD_NAME
 
 class LoginView():
     """
@@ -15,9 +16,6 @@ class LoginView():
     redirect_authenticated_user = False
     extra_context = None
 
-    @method_decorator(sensitive_post_parameters())
-    @method_decorator(csrf_protect)
-    @method_decorator(never_cache)
     def dispatch(self, request, *args, **kwargs):
         if self.redirect_authenticated_user and self.request.user.is_authenticated:
             redirect_to = self.get_success_url()
@@ -79,7 +77,6 @@ class LogoutView():
     template_name = 'registration/logged_out.html'
     extra_context = None
 
-    @method_decorator(never_cache)
     def dispatch(self, request, *args, **kwargs):
         auth_logout(request)
         next_page = self.get_next_page()
