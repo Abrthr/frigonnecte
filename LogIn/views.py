@@ -4,7 +4,7 @@ from django.contrib.auth.forms import (
     AuthenticationForm, PasswordChangeForm, PasswordResetForm, SetPasswordForm,
 )
 
-class LoginView(SuccessURLAllowedHostsMixin, FormView):
+class LoginView():
     """
     Display the login form and handle the login action.
     """
@@ -70,7 +70,7 @@ class LoginView(SuccessURLAllowedHostsMixin, FormView):
         })
         return context
 
-class LogoutView(SuccessURLAllowedHostsMixin, TemplateView):
+class LogoutView():
     """
     Log out the user and display the 'You are logged out' message.
     """
