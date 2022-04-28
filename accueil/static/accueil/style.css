@@ -6,11 +6,12 @@ li a {
     background: white url("images/image_photo.jpg") no-repeat;
 }
 */
+
 .button {
     background-color: #1c87c9;
     border: none;
     color: white;
-    padding: 20px 34px;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -18,3 +19,24 @@ li a {
     margin: 4px 2px;
     cursor: pointer;
   }
+
+.title{
+    background-color: cornflowerblue;
+    border: none;
+    color: aliceblue;
+    font-size: 40px;
+    margin: -10px -10px;
+    text-align: center;
+    height: 130px;
+    line-height: 130px;
+  }
+
+.text{
+    margin: 15px 15px;
+}
+
+.reste{
+    background-color: rgb(232, 250, 255);
+    border: none;
+    margin: -30px -8px;
+}
